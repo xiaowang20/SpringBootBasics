@@ -1,0 +1,38 @@
+server:
+  port: 8082
+#  servlet:
+#    context-path: /test1
+  tomcat:
+    uri-encoding: utf-8
+
+#配置常规属性
+my:
+  name: 赵云
+  address: 常山
+
+#配置列表
+man:
+  name: 小明
+  sex: 男
+  like:
+    - 篮球
+    - 打LOL
+    - 羽毛球
+    - 画画
+
+#配置对象
+people:
+  users:
+    - name: 小华
+      sex: 男
+      like:
+        - 足球
+        - 乒乓球
+        - 看电影
+    - name: 小红
+      sex: 女
+      like:
+        - 过家家
+        - 剧本杀
+        - 追剧
+
