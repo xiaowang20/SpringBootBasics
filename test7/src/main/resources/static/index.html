@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>跨域问题的两种解决方式</title>
+    <script src="jquery-3.6.0.js"></script>
+</head>
+<body>
+<div id="contentDiv"></div>
+<div id="deleteDiv"></div>
+<input type="submit" value="提交数据" onclick="getData()"><br>
+<input type="submit" value="删除数据" onclick="deleteData()"><br>
+<script>
+    function deleteData() {
+        $.ajax({
+            url:'http://localhost:8087/test/deleteBook/10',
+            type:'delete',
+            success:function (msg) {
+                $("#deleteDiv").html(msg);
+            }
+        })
+    }
+    function getData() {
+        $.ajax({
+            url:'http://localhost:8087/test/addBook/',
+            type:'post',
+            data:{name:'鹿鼎记'},
+            success:function (msg) {
+            $("#contentDiv").html(msg);
+            }
+        })
+    }
+</script>
+</body>
+</html>
