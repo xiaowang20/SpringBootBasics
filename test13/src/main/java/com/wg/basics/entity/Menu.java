@@ -1,42 +1,31 @@
 package com.wg.basics.entity;
 
+import lombok.Data;
+
+import java.io.Serializable;
 import java.util.List;
 
-public class Menu {
+/**
+ *  资源实体类
+ */
+@Data
+public class Menu implements Serializable {
     private Integer id;
+
+    private String url;
+
     private String path;
-    private List<Role> roles;
 
-    public List<Role> getRoles() {
-        return roles;
-    }
+    private String component;
 
-    public void setRoles(List<Role> roles) {
-        this.roles = roles;
-    }
+    private String name;
 
-    public Integer getId() {
-        return id;
-    }
+    private String iconCls;
 
-    public void setId(Integer id) {
-        this.id = id;
-    }
+    private Meta meta;
 
-    public String getPath() {
-        return path;
-    }
+    private Integer parentId;//指向父id
 
-    public void setPath(String path) {
-        this.path = path;
-    }
-
-    @Override
-    public String toString() {
-        return "Menu{" +
-                "id=" + id +
-                ", path='" + path + '\'' +
-                ", roles=" + roles +
-                '}';
-    }
+    private Boolean enabled;//显示
+    private List<Menu> children;//资源List
 }

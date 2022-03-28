@@ -4,17 +4,24 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace=" com.wg.basics.mapper.MenuMapper">
     <resultMap id="BaseResultMap" type="com.wg.basics.entity.Menu">
-        <id property="id" column="id"/>
-        <result property="path" column="path"/>
-        <collection property="roles" ofType="com.wg.basics.entity.Role">
-            <id property="id" column="rid"/>
-            <result property="name" column="rname"/>
-            <result property="nameZh" column="rnameZh"/>
-        </collection>
+        <id column="id" property="id" jdbcType="INTEGER" />
+        <result column="url" property="url" jdbcType="VARCHAR" />
+        <result column="path" property="path" jdbcType="VARCHAR" />
+        <result column="component" property="component" jdbcType="VARCHAR" />
+        <result column="name" property="name" jdbcType="VARCHAR" />
+        <result column="iconCls" property="iconCls" jdbcType="VARCHAR" />
+        <result column="parentId" property="parentId" jdbcType="INTEGER" />
+        <result column="enabled" property="enabled" jdbcType="BIT" />
+        <association property="meta" javaType="com.wg.pms.entity.Meta">
+            <result column="keepAlive" property="keepAlive" jdbcType="BIT" />
+            <result column="requireAuth" property="requireAuth" jdbcType="BIT" />
+        </association>
     </resultMap>
     <select id="getAllMenus" resultMap="BaseResultMap">
-        select m.*,r.id AS rid,r.name AS rname,r.nameZh AS rnameZh
-         from menu m LEFT JOIN menu_role mr ON m.id = mr.mid
-            LEFT JOIN role r ON r.id = mr.rid
+     SELECT m.* FROM hr_role hrr
+LEFT JOIN role r ON hrr.rid = r.id
+LEFT JOIN menu_role mr ON r.id = mr.rid
+LEFT JOIN menu m ON mr.mid =m.id
+WHERE hrr.hrid=#{adminId};
     </select>
 </mapper>
