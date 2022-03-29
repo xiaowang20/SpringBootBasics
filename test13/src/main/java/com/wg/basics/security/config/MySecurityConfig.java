@@ -7,7 +7,6 @@ import com.wg.basics.security.component.RestAuthenticationEntryPoint;
 import com.wg.basics.security.component.RestfulAccessDeniedHandler;
 import com.wg.basics.security.vo.AdminUserDetails;
 import com.wg.basics.service.HrService;
-import com.wg.basics.service.Impl.HrServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -51,6 +50,7 @@ public class MySecurityConfig extends WebSecurityConfigurerAdapter {
         auth.userDetailsService(userDetailsService())
         .passwordEncoder(passwordEncoder());
     }
+
     @Bean
     public UserDetailsService userDetailsService() {
         //获取登录用户信息

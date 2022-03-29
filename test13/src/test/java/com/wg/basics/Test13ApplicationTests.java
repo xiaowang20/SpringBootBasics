@@ -1,10 +1,5 @@
 package com.wg.basics;
 
-import com.wg.basics.entity.Role;
-
-import com.wg.basics.service.RoleService;
-import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest

@@ -1,9 +1,7 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE mapper
-        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
-        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace=" com.wg.basics.mapper.MenuMapper">
-    <resultMap id="BaseResultMap" type="com.wg.basics.entity.Menu">
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wg.basics.dao.AdminRole">
+    <resultMap id="BaseResultMap" type="com.wg.basics.entity.Menu" >
         <id column="id" property="id" jdbcType="INTEGER" />
         <result column="url" property="url" jdbcType="VARCHAR" />
         <result column="path" property="path" jdbcType="VARCHAR" />
@@ -12,16 +10,14 @@
         <result column="iconCls" property="iconCls" jdbcType="VARCHAR" />
         <result column="parentId" property="parentId" jdbcType="INTEGER" />
         <result column="enabled" property="enabled" jdbcType="BIT" />
-        <association property="meta" javaType="com.wg.pms.entity.Meta">
             <result column="keepAlive" property="keepAlive" jdbcType="BIT" />
             <result column="requireAuth" property="requireAuth" jdbcType="BIT" />
-        </association>
     </resultMap>
     <select id="getAllMenus" resultMap="BaseResultMap">
-     SELECT m.* FROM hr_role hrr
+        SELECT m.* FROM hr_role hrr
 LEFT JOIN role r ON hrr.rid = r.id
 LEFT JOIN menu_role mr ON r.id = mr.rid
-LEFT JOIN menu m ON mr.mid =m.id
-WHERE hrr.hrid=#{adminId};
+LEFT JOIN menu m ON mr.mid = m.id
+WHERE hrr.hrid = #{adminId} AND m.id IS NOT NULL;
     </select>
-</mapper>
+    </mapper>

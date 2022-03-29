@@ -27,7 +27,10 @@ public class AdminUserDetails implements UserDetails {
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return menu.stream().filter(menu1 -> menu1.getPath()!=null).map(menu1 -> new SimpleGrantedAuthority(menu1.getPath())).collect(Collectors.toList());
+        return menu.stream()
+                .filter(menu1 -> menu1.getPath()!=null)
+                .map(menu1 -> new SimpleGrantedAuthority(menu1.getPath()))
+                .collect(Collectors.toList());
     }
 
     @Override

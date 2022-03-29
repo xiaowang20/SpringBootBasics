@@ -15,4 +15,19 @@ public interface HrService {
      * 获取用户所有权限（包括角色权限和+-权限）
      */
     List<Menu> getPermissionList(long adminId);
+
+    /**
+     * 登录
+     * @param username
+     * @param password
+     * @return
+     */
+    String login(String username, String password);
+
+    /**
+     * 注册
+     * @param adminParam
+     * @return
+     */
+    Hr register(Hr adminParam);
 }

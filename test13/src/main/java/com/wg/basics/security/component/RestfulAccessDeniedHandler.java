@@ -1,6 +1,7 @@
 package com.wg.basics.security.component;
 
 import cn.hutool.json.JSONUtil;
+
 import com.wg.basics.common.CommonResult;
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.web.access.AccessDeniedHandler;
