@@ -11,7 +11,7 @@
     <groupId>com.wg</groupId>
     <artifactId>basics</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>test8</name>
+    <name>test8-SpringMvc整合Aop</name>
     <description>SpringMvc整合Aop</description>
     <properties>
         <java.version>1.8</java.version>

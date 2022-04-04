@@ -11,7 +11,7 @@
     <groupId>com.wg</groupId>
     <artifactId>basics</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>test4</name>
+    <name>test4-SpringBoot整合MVC静态资源</name>
     <description>SpringBoot整合MVC静态资源</description>
     <properties>
         <java.version>1.8</java.version>

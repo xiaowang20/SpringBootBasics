@@ -11,7 +11,7 @@
     <groupId>com.wg</groupId>
     <artifactId>basics</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>test9</name>
+    <name>test9-SpringBoot整合MyBatis</name>
     <description>SpringBoot整合MyBatis</description>
     <properties>
         <java.version>1.8</java.version>

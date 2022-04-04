@@ -11,7 +11,7 @@
     <groupId>com.wg</groupId>
     <artifactId>basics</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>test10</name>
+    <name>test10-spring整合redis</name>
     <description>spring整合redis</description>
     <properties>
         <java.version>1.8</java.version>

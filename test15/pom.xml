@@ -11,7 +11,7 @@
     <groupId>com.wg</groupId>
     <artifactId>basics</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>test15</name>
+    <name>test15-整合WebSocket</name>
     <description>整合WebSocket</description>
     <properties>
         <java.version>1.8</java.version>

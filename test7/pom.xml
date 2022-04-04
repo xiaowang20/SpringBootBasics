@@ -11,7 +11,7 @@
     <groupId>com.wg</groupId>
     <artifactId>basics</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>test7</name>
+    <name>test7-SpringMvc的cors配置</name>
     <description>SpringMvc的cors配置</description>
     <properties>
         <java.version>1.8</java.version>

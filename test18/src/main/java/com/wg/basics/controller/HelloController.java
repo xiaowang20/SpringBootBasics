@@ -21,8 +21,6 @@ public class HelloController {
     public void hello(){
         try {
             jobLauncher.run(job,null);
-        } catch (JobExecutionAlreadyRunningException e) {
-            e.printStackTrace();
         } catch (Exception e) {
             e.printStackTrace();
         }

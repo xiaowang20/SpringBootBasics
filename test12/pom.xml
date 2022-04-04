@@ -11,8 +11,8 @@
     <groupId>com.wg</groupId>
     <artifactId>basics</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>test12</name>
-    <description>springBoot整合安全框架</description>
+    <name>test12-springBoot整合安全框架-内存认证</name>
+    <description>springBoot整合安全框架-内存认证</description>
     <properties>
         <java.version>1.8</java.version>
     </properties>

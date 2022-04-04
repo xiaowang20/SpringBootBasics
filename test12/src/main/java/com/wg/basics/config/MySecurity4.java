@@ -13,7 +13,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 /**
  * 实现多个HttpConfigurer
  */
-@Configuration
+//@Configuration
 public class MySecurity4{
     //采用默认的密码编码器
     @Bean

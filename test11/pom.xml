@@ -11,8 +11,8 @@
     <groupId>com.wg</groupId>
     <artifactId>basics</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>test11</name>
-    <description>springBoot整合缓存</description>
+    <name>test11-springBoot整合EnCache缓存</name>
+    <description>springBoot整合EnCache缓存</description>
     <properties>
         <java.version>1.8</java.version>
     </properties>

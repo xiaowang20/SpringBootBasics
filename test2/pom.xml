@@ -11,7 +11,7 @@
     <groupId>com.wg</groupId>
     <artifactId>basics</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>test2</name>
+    <name>test2-整合Thymeleaf</name>
     <description>整合Thymeleaf</description>
     <properties>
         <java.version>1.8</java.version>

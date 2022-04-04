@@ -2,10 +2,9 @@ package com.wg.basics;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 @SpringBootTest
-class Test12ApplicationTests {
+class Test21ApplicationTests {
 
     @Test
     void contextLoads() {

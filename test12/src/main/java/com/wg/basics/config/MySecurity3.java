@@ -41,7 +41,7 @@ import java.util.Map;
  *  3.配置登出期间的操作
  *  4.配置登出成功后操作
  */
-@Configuration
+//@Configuration
 public class MySecurity3 extends WebSecurityConfigurerAdapter {
     @Bean
     PasswordEncoder passwordEncoder(){

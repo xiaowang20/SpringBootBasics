@@ -11,7 +11,7 @@
     <groupId>com.wg</groupId>
     <artifactId>bascis</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>test1</name>
+    <name>test1-SpringBoot基础配置教学</name>
     <description>SpringBoot基础配置教学</description>
     <properties>
         <java.version>1.8</java.version>

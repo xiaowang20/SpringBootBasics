@@ -11,7 +11,7 @@
     <groupId>com.wg</groupId>
     <artifactId>basics</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>test5</name>
+    <name>test5-SpringMvc整合文件上传</name>
     <description>SpringMvc整合文件上传</description>
     <properties>
         <java.version>1.8</java.version>
